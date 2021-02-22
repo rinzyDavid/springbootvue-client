@@ -1,28 +1,31 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="container">
+    <img alt="Vue logo" src="./assets/olafoods.jpg" style="width:150px;height:150px">
+     <router-view />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+//import Home from './components/Home.vue'
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
+  
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+@import url(https://unpkg.com/bootstrap@4.1.0/dist/css/bootstrap.min.css)
+
+body {
+  
+  padding-top: 1em;
+  padding-bottom: 1em;
+  font-size: 2em;
+  width: 80%;
+  margin: 0 auto;
 }
+
+@import'~bootstrap/dist/css/bootstrap.css'
+
 </style>
